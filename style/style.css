@@ -1,0 +1,992 @@
+/* TYPOGRAPHIES */
+
+@import url(https://fonts.googleapis.com/css?family=VT323);
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+/* GENERAL */
+
+html{
+    font-family: 'VT323';
+    letter-spacing: 0.01em;
+}
+
+main{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+/* HEAD */
+
+.mobile{
+    display: none;
+}
+
+.image_entete{
+    background-image: url(../image/chambre_vector2.png);
+    height: 85vh;
+    width: 100%;
+    background-size: contain;
+    background-repeat:no-repeat;
+    background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu a{
+    font-family: 'Press Start 2P', sans-serif;
+    color: #fc8b3d;
+    text-decoration: none;
+}
+
+.menu li{
+    border: solid #fc8b3d 8px;
+    color: #fc8b3d;
+    list-style-type: none;
+    display: inline-block;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+.menu li:hover{
+    border-color: #fff63b;
+}
+
+.menu li:hover a{
+    color: #fff63b;
+}
+
+
+.menu li img{
+    height: 1.5em;
+}
+
+.entete{
+    border: solid black 8px;
+    padding: 10px;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.entete img{
+    height: 0.7em;
+}
+
+.menu_button{
+    display: none;
+}
+
+
+/* Images menu */
+
+.img_menu{
+    width: 1.5em;
+    height: 2em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.img_menu, .menu li{
+    display: inline-block;
+}
+
+.coeur{
+    background-image: url(../image/coeur_pixel.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: 5px 18px;
+}
+
+@-webkit-keyframes coeur {
+    from{
+        background:url(../image/coeur_pixel_jaune.png);
+        background-size: 19%;
+        background-repeat: no-repeat;
+        background-position: 1px 10px;
+    }
+    to{
+    background:url(../image/coeur_pixel_jaune.png);
+    }
+}
+
+.coeur:hover{
+    -webkit-animation: coeur 180s ease;
+}
+
+
+
+
+.epee{
+    background-image: url(../image/epee_pixel.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: 5px 15px;
+}
+
+@-webkit-keyframes epee {
+    from{
+        background:url(../image/epee_pixel_jaune.png);
+        background-size: 19%;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    to{
+    background:url(../image/epee_pixel_jaune.png);
+    }
+}
+
+.epee:hover{
+    -webkit-animation: epee 180s ease;
+}
+
+
+
+
+.bourse{
+    background-image: url(../image/bourse_pixel.png);
+    background-size: 13%;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+}
+
+@-webkit-keyframes bourse {
+    from{
+        background:url(../image/bourse_pixel_jaune.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    to{
+    background:url(../image/bourse_pixel_jaune.png);
+    }
+}
+
+.bourse:hover{
+    -webkit-animation: bourse 180s ease;
+}
+
+
+
+.croix{
+    background-image: url(../image/croix_pixel.png);
+    background-size: 20%;
+    background-repeat: no-repeat;
+    background-position: 5px 6px;
+}
+
+@-webkit-keyframes croix {
+    from{
+        background:url(../image/croix_pixel_jaune.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+    to{
+    background:url(../image/croix_pixel_jaune.png);
+    }
+}
+
+.croix:hover{
+    -webkit-animation: croix 180s ease;
+}
+
+
+
+.parler{
+    background-image: url(../image/parler_pixel.png);
+    background-size: 8%;
+    background-repeat: no-repeat;
+    background-position: 11px 10px;
+}
+
+
+@-webkit-keyframes parler {
+    from{
+        background:url(../image/parler_pixel_jaune.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: 5px 3px;
+    }
+    to{
+    background:url(../image/parler_pixel_jaune.png);
+    }
+}
+
+.parler:hover{
+    -webkit-animation: parler 180s ease;
+}
+
+
+/* MAIN */
+
+.wrapper{
+    width: 90%;
+}
+
+.wrapper div{
+    border: solid black 8px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.wrapper div:after {
+    display:block;
+    content:'';
+    clear:both;
+}
+
+.tetes{
+    width: 7em;
+    float:left;
+}
+
+
+/* FORMULAIRE DE CONTACT */
+
+form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+    border: 8px solid black;
+}
+
+input, textarea{
+    margin-top: 1em;
+}
+
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+}
+
+input, textarea {
+    font-family: 'VT323';
+    width: 250px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.button{
+    background-image:url("../image/button1.png");
+    width: 187px;
+    height: 33px;
+}
+
+.button:hover {
+    background-image: url("../image/button2.png");
+}
+
+input:focus, textarea:focus {
+    /* Permet de rehausser les éléments actifs */
+    border-color: #fff63b;
+}
+
+
+/* SLIDER */ /* provient du site : http://bloggerslider.shuvojitdas.com/2013/03/pure-css3-image-slider-for-blogspot.html#.UzlqUlyVsQc */
+
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 718px;
+}
+
+#content-slider {
+    height: 518px;
+    width: 100%;
+}
+
+#slider {
+    background: none repeat scroll 0 0 #000000;
+    border: 8px solid black;
+    height: 500px;
+    margin: 10px auto;
+    overflow: visible;
+    position: relative;
+    width: 700px;
+}
+
+#mask {
+    height: 700px;
+    overflow: hidden;
+}
+
+#slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#slider li {
+    width: 680px;
+    height: 320px;
+    position: absolute;
+    top: -325px;
+    list-style: none;
+}
+
+#slider li.firstanimation {
+    -moz-animation: cycle 25s linear infinite;
+    -webkit-animation: cycle 25s linear infinite;
+}
+
+#slider li.secondanimation {
+    -moz-animation: cycletwo 25s linear infinite;
+    -webkit-animation: cycletwo 25s linear infinite;
+}
+
+#slider li.thirdanimation {
+    -moz-animation: cyclethree 25s linear infinite;
+    -webkit-animation: cyclethree 25s linear infinite;
+}
+
+#slider li.fourthanimation {
+    -moz-animation: cyclefour 25s linear infinite;
+    -webkit-animation: cyclefour 25s linear infinite;
+}
+
+#slider li.fifthanimation {
+    -moz-animation: cyclefive 25s linear infinite;
+    -webkit-animation: cyclefive 25s linear infinite;
+}
+
+#slider .tooltip {
+    background: rgba(0, 0, 0, 0.7);
+    width: 500px;
+    height: 200px;
+    position: relative;
+    bottom: 75px;
+}
+
+#slider .tooltip h1 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 60px;
+    padding: 0 0 0 20px;
+}
+
+
+
+/* Barre de progression */
+
+.progress-bar {
+    position: relative;
+    top: -5px;
+    width: 680px;
+    height: 5px;
+    background: #000;
+    -moz-animation: fullexpand 25s ease-out infinite;
+    -webkit-animation: fullexpand 25s ease-out infinite;
+}
+
+
+/* Animation */
+
+@-moz-keyframes cycle {
+    0% {
+        top: 0px;
+    }
+    4% {
+        top: 0px;
+    }
+    16% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    20% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    21% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    92% {
+        top: -325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    96% {
+        top: -325px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes cycletwo {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    16% {
+        top: -325px;
+        opacity: 0;
+    }
+    20% {
+        top: 0px;
+        opacity: 1;
+    }
+    24% {
+        top: 0px;
+        opacity: 1;
+    }
+    36% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    40% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    41% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-moz-keyframes cyclethree {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    36% {
+        top: -325px;
+        opacity: 0;
+    }
+    40% {
+        top: 0px;
+        opacity: 1;
+    }
+    44% {
+        top: 0px;
+        opacity: 1;
+    }
+    56% {
+        top: 0px;
+        opacity: 1;
+    }
+    60% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    61% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-moz-keyframes cyclefour {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    56% {
+        top: -325px;
+        opacity: 0;
+    }
+    60% {
+        top: 0px;
+        opacity: 1;
+    }
+    64% {
+        top: 0px;
+        opacity: 1;
+    }
+    76% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    80% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    81% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-moz-keyframes cyclefive {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    76% {
+        top: -325px;
+        opacity: 0;
+    }
+    80% {
+        top: 0px;
+        opacity: 1;
+    }
+    84% {
+        top: 0px;
+        opacity: 1;
+    }
+    96% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    100% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+@-webkit-keyframes cycle {
+    0% {
+        top: 0px;
+    }
+    4% {
+        top: 0px;
+    }
+    16% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    20% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    21% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    50% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    92% {
+        top: -325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    96% {
+        top: -325px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes cycletwo {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    16% {
+        top: -325px;
+        opacity: 0;
+    }
+    20% {
+        top: 0px;
+        opacity: 1;
+    }
+    24% {
+        top: 0px;
+        opacity: 1;
+    }
+    36% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    40% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    41% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-webkit-keyframes cyclethree {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    36% {
+        top: -325px;
+        opacity: 0;
+    }
+    40% {
+        top: 0px;
+        opacity: 1;
+    }
+    44% {
+        top: 0px;
+        opacity: 1;
+    }
+    56% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    60% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    61% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-webkit-keyframes cyclefour {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    56% {
+        top: -325px;
+        opacity: 0;
+    }
+    60% {
+        top: 0px;
+        opacity: 1;
+    }
+    64% {
+        top: 0px;
+        opacity: 1;
+    }
+    76% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    80% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+    81% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+    100% {
+        top: -325px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+@-webkit-keyframes cyclefive {
+    0% {
+        top: -325px;
+        opacity: 0;
+    }
+    76% {
+        top: -325px;
+        opacity: 0;
+    }
+    80% {
+        top: 0px;
+        opacity: 1;
+    }
+    84% {
+        top: 0px;
+        opacity: 1;
+    }
+    96% {
+        top: 0px;
+        opacity: 1;
+        z-index: 0;
+    }
+    100% {
+        top: 325px;
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+
+/* Barre d'animation*/
+
+@-moz-keyframes fullexpand {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        width: 0%;
+        opacity: 0;
+    }
+    4%,
+    24%,
+    44%,
+    64%,
+    84% {
+        width: 0%;
+        opacity: 0.3;
+    }
+    16%,
+    36%,
+    56%,
+    76%,
+    96% {
+        width: 100%;
+        opacity: 0.7;
+    }
+    17%,
+    37%,
+    57%,
+    77%,
+    97% {
+        width: 100%;
+        opacity: 0.3;
+    }
+    18%,
+    38%,
+    58%,
+    78%,
+    98% {
+        width: 100%;
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes fullexpand {
+    0%,
+    20%,
+    40%,
+    60%,
+    80%,
+    100% {
+        width: 0%;
+        opacity: 0;
+    }
+    4%,
+    24%,
+    44%,
+    64%,
+    84% {
+        width: 0%;
+        opacity: 0.3;
+    }
+    16%,
+    36%,
+    56%,
+    76%,
+    96% {
+        width: 100%;
+        opacity: 0.7;
+    }
+    17%,
+    37%,
+    57%,
+    77%,
+    97% {
+        width: 100%;
+        opacity: 0.3;
+    }
+    18%,
+    38%,
+    58%,
+    78%,
+    98% {
+        width: 100%;
+        opacity: 0;
+    }
+}
+
+
+/* PORTFOLIO */
+
+.images_portfolio img{
+    max-width: 30%;
+}
+
+
+
+
+/* SMARTPHONE */
+
+@media (max-width:360px){
+    main{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .wrapper {
+    width: 100%;
+    }
+    
+    nav ul{
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+    }
+    
+    nav ul.open{
+        height: 22em;
+    }
+    
+    .menu_button{
+        height: 3em;
+        line-height: 3em;
+        background-color: white;
+        border: solid #fc8b3d 8px;
+        color: #fc8b3d;
+        font-family: 'Press Start 2P';
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+    
+    main div{
+        height: 100%;
+    }
+    
+    nav ul li{
+        width: 80%;
+    }
+    
+    nav ul li a{
+        float: right;
+        margin-top: 13px;
+    }
+    
+    .bourse{
+    background-image: url(../image/bourse_pixel.png);
+    background-size: 11%;
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    }
+    
+    .croix{
+    background-image: url(../image/croix_pixel.png);
+    background-size: 15%;
+    background-repeat: no-repeat;
+    background-position: 5px 6px;
+    }
+    
+    .image_entete{
+    background-image: url(../image/chambre_vector2.png);
+    height: 85vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: -260px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    
+    .container {
+    width: 360px;;
+}
+
+#content-slider {
+    height: 100%;
+    width: 360px;
+}
+
+#slider {
+    overflow: visible;
+    position: relative;
+    width: 360px;;
+}
+
+#mask {
+    height: 100%;
+    overflow: hidden;
+}
+
+#slider ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+#slider li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -325px;
+    list-style: none;
+}
+    
+    #slider li {
+        max-width: 100%;
+    }
+    
+    .ordinateur{
+        display: none;
+    }
+    
+    .mobile{
+        display: block;
+    }
+    
+    form{
+       width: 90%; 
+    }
+    
+    .images_portfolio{
+        max-width: 360px;
+    }
+}
+
+
