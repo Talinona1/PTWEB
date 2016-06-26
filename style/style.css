@@ -15,6 +15,11 @@ main{
     margin-right: 10%;
 }
 
+span{
+    font-size: 18px;
+    color: #ed1e24;
+}
+
 /* HEAD */
 
 .mobile{
@@ -936,37 +941,37 @@ input:focus, textarea:focus {
     
     .container {
     width: 360px;;
-}
+    }
 
-#content-slider {
-    height: 100%;
-    width: 360px;
-}
+    #content-slider {
+        height: 100%;
+        width: 360px;
+    }
 
-#slider {
-    overflow: visible;
-    position: relative;
-    width: 360px;;
-}
+    #slider {
+        overflow: visible;
+        position: relative;
+        width: 360px;;
+    }
 
-#mask {
-    height: 100%;
-    overflow: hidden;
-}
+    #mask {
+        height: 100%;
+        overflow: hidden;
+    }
 
-#slider ul {
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
+    #slider ul {
+        margin: 0;
+        padding: 0;
+        position: relative;
+    }
 
-#slider li {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: -325px;
-    list-style: none;
-}
+    #slider li {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: -325px;
+        list-style: none;
+    }
     
     #slider li {
         max-width: 100%;

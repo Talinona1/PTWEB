@@ -50,7 +50,7 @@
                        67500 Haguenau</li>
                    <li>Téléphone : 06.45.53.10.37</li>
                    <li>Courriel : timothe.golla@gmail.com</li>
-                   <li><a href="">Téléchargez mon cv papier (A FAIRE)</a></li>
+                   <li><a href="" download="CV_Golla_Timothe">Téléchargez mon cv papier</a></li>
                </ul>
            </div>
        </div>
